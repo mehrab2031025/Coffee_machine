@@ -73,6 +73,8 @@ while True:
                 Current_money += MENU[user_choice]["cost"]
                 print(f"Here is ${round(total_money - MENU[user_choice]["cost"], 2)} in change")
                 print(f"Here is your {user_choice}. Enjoy")
+            else:
+                print("Sorry, that's not enough money. Money refunded.")
         elif Current_water < MENU[user_choice]["ingredients"]["water"]:
             print("Sorry there is not enough water")
         elif Current_milk < MENU[user_choice]["ingredients"]["milk"]:
